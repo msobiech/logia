@@ -2,6 +2,7 @@ from turtle import *
 from math import sqrt
 
 p = Turtle()
+
 bok = 470*2
 
 def element(a):
