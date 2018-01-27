@@ -1,5 +1,10 @@
 from turtle import*
 
+cyfry = ["0","1","2","3","4","5","6","7","8","9"]
+samogloski = ["a","e","i","o","u","y"]
+
+litery_dol = ["g","j","p","q","y"]
+litery_gora = ["b","d","f","h","k","l","t"]
 p = Turtle()
 
 def wys(a,kolor):
@@ -39,13 +44,6 @@ def dol(a,kolor):
     p.fd(a)
     p.lt(90)
 
-cyfry = ["0","1","2","3","4","5","6","7","8","9"]
-samogloski = ["a","e","i","o","u","y"]
-
-litery_dol = ["g","j","p","q","y"]
-litery_gora = ["b","d","f","h","k","l","t"]
-
-
 def rysuj(s):
     a = 470/len(s)
     kolor = 0
@@ -62,14 +60,6 @@ def rysuj(s):
             kolor = "yellow"
             
         #rysowanie
-        #if l in cyfry or l in litery_gora:
-            
-        '''
-        if litera in gora and cyfry:
-            cyfra(a)
-        if (litera in gora) and not(litera in cyfry):
-            wys_zol(a)
-        '''
         if l in litery_gora or l in cyfry:
             wys(a,kolor)
         elif l in litery_dol:
