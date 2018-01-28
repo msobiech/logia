@@ -1,14 +1,12 @@
 def zakoduj(wyraz):
     zakodowany = []
+    kody = {"a":"z", "b":"x", "c":"v"}
     for ch in wyraz:
-        if ch == "a":
-            zakodowany.append("f")
-        elif ch == "b":
-            zakodowany.append("h")
-        elif ch == "c":
-            zakodowany.append("v")
+        if ch in kody:
+            zakodowany.append(kody[ch])
         else:
             zakodowany.append(ch)
+        
 
     return "".join(zakodowany)
 
